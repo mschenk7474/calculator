@@ -17,8 +17,6 @@
 {Describe the programming language that you used and any libraries.}
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 * [Java Tutorial for Beginners](https://www.youtube.com/watch?v=eIrMbAQSU34)
 * [Converting a Double to a Float](https://stackoverflow.com/questions/14513597/cannot-convert-from-double-to-float)
 * [Java Method Calling](https://stackoverflow.com/questions/43350522/how-can-one-java-file-call-methods-from-another-java-file)
