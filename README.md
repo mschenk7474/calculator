@@ -25,6 +25,6 @@
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
+* Make A GUI version of this calculator using Java Swing
+* 
 * Item 3

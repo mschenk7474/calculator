@@ -15,20 +15,18 @@ public class Menu {
         
         while (!readyToQuit){
             System.out.println("Choose from one of our many options below:");
-            System.out.println("0. Quit");
-            System.out.println("1. Add");
-            System.out.println("2. Subtract");
-            System.out.println("3. Multiply");
-            System.out.println("4. Divide");
-            System.out.println("5. Percent");
-            System.out.println("6. Percentage");
-            System.out.println("7. Power of");
-            System.out.println("8. Square Root");
-            System.out.println("9. Absolute Value");
-            System.out.println("10. Show Total");
-            System.out.println("11. Show Previous Totals");
-            System.out.println("12. Clear Total");
-            System.out.println("13. Clear Previous Totals");
+            System.out.println("0.  Quit");
+            System.out.println("1.  Add");
+            System.out.println("2.  Subtract");
+            System.out.println("3.  Multiply");
+            System.out.println("4.  Divide");
+            System.out.println("5.  Percent");
+            System.out.println("6.  Percentage");
+            System.out.println("7.  Power of");
+            System.out.println("8.  Square Root");
+            System.out.println("9.  Absolute Value");
+            System.out.println("10. Show");
+            System.out.println("11. Clear");
             System.out.print("Input your choice here: ");
             int choice = scanner.nextInt();
             System.out.println(" ");
@@ -338,26 +336,57 @@ public class Menu {
                     System.out.println("Incorrect option, please try again.");
                 }
             }
-            // show total
+
+            // show 
             else if (choice == 10){
-                calc.print();
+                System.out.println("Choose what you would like to do from the options below:");
+                System.out.println("1. Show the total");
+                System.out.println("2. Show the previous totals");
+                System.out.print("Input your choice here: ");
+                int show_choice = scanner.nextInt();
+                System.out.println(" ");
+
+                // show total
+                if (show_choice == 1){
+                    calc.print();
+                } 
+
+                // show previous totals
+                else if (show_choice == 2){
+                    calc.show_totals();
+                }
+
+                // invalid option
+                else {
+                    System.out.println("Incorrect option, please try again.");
+                }
             }
 
-            // show previous totals
+            // clear 
             else if (choice == 11){
-                calc.show_totals();
-            }
+                System.out.println("Choose what you would like to do from the options below:");
+                System.out.println("1. Clear the total");
+                System.out.println("2. Clear the previous totals");
+                System.out.print("Input your choice here: ");
+                int clear_choice = scanner.nextInt();
+                System.out.println(" ");
 
-            // clear total
-            else if(choice ==12){
-                calc.clear();
-                calc.print();
-            }
+                // clear total
+                if (clear_choice == 1){
+                    calc.clear();
+                    calc.print();
+                }
 
-            // clear previous totals
-            else if(choice ==13){
-                calc.clear_totals();
-                calc.show_totals();
+                // clear previous totals
+                else if (clear_choice == 2){
+                    calc.clear_totals();
+                    calc.show_totals();
+                }
+
+                // invalid option
+                else {
+                    System.out.println("Incorrect option, please try again.");
+                }
             }
 
             // incorrect
