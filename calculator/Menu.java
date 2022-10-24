@@ -21,13 +21,14 @@ public class Menu {
             System.out.println("3. Multiply");
             System.out.println("4. Divide");
             System.out.println("5. Percent");
-            System.out.println("6. Power of");
-            System.out.println("7. Square Root");
-            System.out.println("8. Absolute Value");
-            System.out.println("9. Show Total");
-            System.out.println("10. Show Previous Totals");
-            System.out.println("11. Clear Total");
-            System.out.println("12. Clear Previous Totals");
+            System.out.println("6. Percentage");
+            System.out.println("7. Power of");
+            System.out.println("8. Square Root");
+            System.out.println("9. Absolute Value");
+            System.out.println("10. Show Total");
+            System.out.println("11. Show Previous Totals");
+            System.out.println("12. Clear Total");
+            System.out.println("13. Clear Previous Totals");
             System.out.print("Input your choice here: ");
             int choice = scanner.nextInt();
             System.out.println(" ");
@@ -180,17 +181,18 @@ public class Menu {
                 }
             }
 
-            // percent 
+            // percent
             else if (choice == 5){
+                System.out.println("* NOTE: This is the option to MULTIPLY by 100 *");
                 System.out.println("Choose what you would like to do from the options below:");
                 System.out.println("1. Get the percent of a number");
                 System.out.println("2. Get the percent of the running total");
                 System.out.print("Input your choice here: ");
-                int per_choice = scanner.nextInt();
+                int p_choice = scanner.nextInt();
                 System.out.println(" ");
 
-                // percent of a specified number
-                if (per_choice == 1){
+                // percentage of a specified number
+                if (p_choice == 1){
                     System.out.print("Input a number you would like to get the percent of: ");
                     first = scanner.nextFloat();
 
@@ -198,8 +200,8 @@ public class Menu {
                     calc.print();
                 }
 
-                // percent of the running total
-                else if (per_choice == 2){
+                // percentage of the running total
+                else if (p_choice == 2){
                     calc.percent(calc.result);
                     calc.print();
                 }
@@ -210,8 +212,39 @@ public class Menu {
                 }
             }
 
-            // power of
+            // percentage
             else if (choice == 6){
+                System.out.println("* NOTE: This is the option to DIVIDE by 100 *");
+                System.out.println("Choose what you would like to do from the options below:");
+                System.out.println("1. Get the percentage of a number");
+                System.out.println("2. Get the percentage of the running total");
+                System.out.print("Input your choice here: ");
+                int per_choice = scanner.nextInt();
+                System.out.println(" ");
+
+                // percentage of a specified number
+                if (per_choice == 1){
+                    System.out.print("Input a number you would like to get the percentage of: ");
+                    first = scanner.nextFloat();
+
+                    calc.percentage(first);
+                    calc.print();
+                }
+
+                // percentage of the running total
+                else if (per_choice == 2){
+                    calc.percentage(calc.result);
+                    calc.print();
+                }
+
+                // invalid option
+                else {
+                    System.out.println("Incorrect option, please try again.");
+                }
+            }
+
+            // power of
+            else if (choice == 7){
                 System.out.println("Choose what you would like to do from the options below:");
                 System.out.println("1. Get the specific power of a specific number");
                 System.out.println("2. Get the specific power of the running total");
@@ -247,7 +280,7 @@ public class Menu {
             }
 
             // square root
-            else if (choice == 7){
+            else if (choice == 8){
                 System.out.println("Choose what you would like to do from the options below:");
                 System.out.println("1. Get the square root of a specific number");
                 System.out.println("2. Get the square root of the running total");
@@ -277,7 +310,7 @@ public class Menu {
             }
 
             // absolute value
-            else if (choice == 8){
+            else if (choice == 9){
                 System.out.println("Choose what you would like to do from the options below:");
                 System.out.println("1. Get the absolute value of a specific number");
                 System.out.println("2. Get the absolute value of the running total");
@@ -306,23 +339,23 @@ public class Menu {
                 }
             }
             // show total
-            else if (choice == 9){
+            else if (choice == 10){
                 calc.print();
             }
 
             // show previous totals
-            else if (choice == 10){
+            else if (choice == 11){
                 calc.show_totals();
             }
 
             // clear total
-            else if(choice ==11){
+            else if(choice ==12){
                 calc.clear();
                 calc.print();
             }
 
             // clear previous totals
-            else if(choice ==12){
+            else if(choice ==13){
                 calc.clear_totals();
                 calc.show_totals();
             }

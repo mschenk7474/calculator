@@ -51,7 +51,12 @@ public class Calculations extends MathOperations{
         previousTotals.add(result);
     }
 
-    public void percent(float firstNum){
+    public void percent (float firstNum){
+        result = firstNum * 100;
+        previousTotals.add(result);
+    }
+
+    public void percentage(float firstNum){
         result = firstNum / 100;
         previousTotals.add(result);
     }
