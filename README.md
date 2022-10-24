@@ -19,12 +19,16 @@
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Java Tutorial for Beginners](https://www.youtube.com/watch?v=eIrMbAQSU34)
+* [Converting a Double to a Float](https://stackoverflow.com/questions/14513597/cannot-convert-from-double-to-float)
+* [Java Method Calling](https://stackoverflow.com/questions/43350522/how-can-one-java-file-call-methods-from-another-java-file)
+* [Java Math](https://www.w3schools.com/java/java_math.asp)
+* [Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
+* [Java Inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
+
+
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Make A GUI version of this calculator using Java Swing
-* 
-* Item 3
+* Add more math functions, maybe trigonometric functions
+* Add a graphing option like a graphing calculator
