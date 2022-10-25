@@ -9,10 +9,9 @@ class MathOperations{
         throughout the entire program.
 
         This class is meant to be used and called upon by other classes,
-        such as the Calculations class. This class is meant to be one that
-        other classes can pull from, hence the name parent class. We could
-        make multiple classes that are able to use the variables and methods
-        found in this class.
+        such as the Calculations class. We could make multiple classes 
+        that are able to use the variables and methods found in this class
+        using Inheritance.
      */
 
     /*  global variables to be used throughout this class and others */
