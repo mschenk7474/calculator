@@ -11,10 +11,12 @@
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
-
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
+Languages, Libraries, and Tools used to develop this software:
+* VSCode
+* Java
+* Java SDK 
+* java.util.ArrayList
+* java.util.Scanner;
 
 # Useful Websites
 * [Java Tutorial for Beginners](https://www.youtube.com/watch?v=eIrMbAQSU34)
