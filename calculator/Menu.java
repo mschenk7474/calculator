@@ -342,7 +342,7 @@ public class Menu {
                 // power of running total
                 else if (pow_choice == 2){
                     // gets a power that is to be applied to the running total from the user
-                    System.out.print("Input a number as the percent you want applied to the running total: ");
+                    System.out.print("Input a number as the power you want applied to the running total: ");
                     second = scanner.nextFloat();
 
                     // calculates the power of the running total and outputs it to the user
