@@ -12,7 +12,8 @@ As previously mentioned, I have created a calculator using Java in the command l
 Languages, Libraries, and Tools used to develop this software:
 * VSCode
 * Java
-* Java SDK 
+* Java SDK
+* Java Virtual Machine
 * java.util.ArrayList
 * java.util.Scanner
 
