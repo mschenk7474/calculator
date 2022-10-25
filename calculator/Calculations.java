@@ -9,9 +9,7 @@ class MathOperations{
         throughout the entire program.
 
         This class is meant to be used and called upon by other classes,
-        such as the Calculations class. We could make multiple classes 
-        that are able to use the variables and methods found in this class
-        using Inheritance.
+        such as the Calculations class.
      */
 
     /*  global variables to be used throughout this class and others */
@@ -50,17 +48,17 @@ class MathOperations{
 public class Calculations extends MathOperations{
     /* 
      Within each of the methods in this class, there
-     are two things. The first being the actual math operation,
+     are two parts. The first part being the actual math operation,
      where the result variable is updated depending on what the
      user decides to do. Each method is named for the operation they
      do, so it is very easy to understand which each does.
      
-     The second action of the methods are to add result to the previous 
+     The second part of the methods is to add result to the previous 
      totals ArrayList. We do this so, if the user would like, they can see 
      what have been the previous totals. We add this after we do the calculations
-     to make sure the result we want is added to the list, whether
-     it be the running total be updated or just two numbers within
-     an operation
+     to make sure the result calculated is added to the list, whether
+     it be the running total being updated or just two numbers within
+     an operation.
 
      This class also uses inheritance to be able to use all the methods found
      in the MathOperations class when called from a different class as an object.
