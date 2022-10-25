@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 class MathOperations{
     /*
-        An abstract parent class that has the global variables necessary 
-        for conducting math operations, and some basic methods to be used
-        throughout the entire program.
+    An abstract parent class that has the global variables necessary 
+    for conducting math operations, and some basic methods to be used
+    throughout the entire program.
 
-        This class is meant to be used and called upon by other classes,
-        such as the Calculations class.
-     */
+    This class is meant to be used and called upon by other classes,
+    such as the Calculations class.
+    */
 
     /*  global variables to be used throughout this class and others */
     public float result;
