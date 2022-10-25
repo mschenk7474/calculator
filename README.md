@@ -24,8 +24,6 @@ Languages, Libraries, and Tools used to develop this software:
 * [Java ArrayList](https://www.w3schools.com/java/java_arraylist.asp)
 * [Java Inheritance](https://www.geeksforgeeks.org/inheritance-in-java/)
 
-
-
 # Future Work
 * Make A GUI version of this calculator using Java Swing
 * Add more math functions, maybe trigonometric functions
